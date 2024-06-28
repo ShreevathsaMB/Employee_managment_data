@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+
+</head>
+{% load static%}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<body >
+   
+  
+    <h1>Employee Management</h1>
+    <a href="{% url 'employelist' %}" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px;">List of Employees</a>
+    
+
+
+    <a href="{% url 'addemployee' %}" style="background-color: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Add Employee</a>
+
+    <div class="employee-heading">
+        <span class="emp">E</span>
+        <span class="mployee">MPLOYEE</span>
+        <span class="management">MANAGEMENT</span>
+      </div>
+    
+      </body>
+    
+    <style>
+        
+        
+
+      .employee-heading {
+        text-align: center; /* Center align the heading */
+        font-size: 4em; /* Set a large font size */
+        margin: 2rem 0; /* Add some margin for spacing */
+      }
+    
+      .emp, .management {
+        color: #333; /* Set a dark color for these elements */
+      }
+    
+      .mployee {
+        color: #e74c3c; /* Set a contrasting color for the middle word */
+        font-weight: bold; /* Make the middle word bold */
+      }
+
+    </style>
+
+    </body>
+</html>
